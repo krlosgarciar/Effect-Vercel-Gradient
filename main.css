@@ -25,7 +25,7 @@ span {
   font-size: 100px;
   line-height: 1;
   position: relative;
-  padding: 0 15px 16px;
+  padding: 0 15px 15px;
 }
 
 span::before {
@@ -33,6 +33,7 @@ span::before {
   animation-duration: 8s;
   animation-iteration-count: infinite;
   background: linear-gradient(90deg, var(--start-color), var(--end-color));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #fff;
