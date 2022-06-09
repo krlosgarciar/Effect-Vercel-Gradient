@@ -26,6 +26,9 @@ span {
   line-height: 1;
   position: relative;
   padding: 0 15px 15px;
+  animation-name: var(--animationS, b);
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 span::before {
@@ -36,7 +39,7 @@ span::before {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #fff;
+  /* color: #fff; */
   font-size: 100px;
   position: absolute;
   inset: 0;
@@ -57,6 +60,21 @@ span::before {
   }
 }
 
+@keyframes b {
+  0%,
+  16.667%,
+  100% {
+    color: #fff;
+    opacity: 1;
+  }
+
+  33.333%,
+  83.333% {
+    color: #000;
+    opacity: 1;
+  }
+}
+
 @keyframes a2 {
   0%,
   100% {
@@ -74,6 +92,26 @@ span::before {
   }
 }
 
+@keyframes b2 {
+  0%,
+  100% {
+    color: #000;
+    opacity: 1;
+  }
+
+  33.333%,
+  50% {
+    color: #fff;
+    opacity: 1;
+  }
+
+  16.667%,
+  66.667% {
+    color: #000;
+    opacity: 1;
+  }
+}
+
 @keyframes a3 {
   0%,
   50%,
@@ -83,6 +121,21 @@ span::before {
 
   66.667%,
   83.333% {
+    opacity: 1;
+  }
+}
+
+@keyframes b3 {
+  0%,
+  50%,
+  100% {
+    color: #000;
+    opacity: 1;
+  }
+
+  66.667%,
+  83.333% {
+    color: #fff;
     opacity: 1;
   }
 }
