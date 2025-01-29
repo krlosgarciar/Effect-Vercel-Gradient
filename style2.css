@@ -1,0 +1,33 @@
+#graficos3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+#img:hover {
+  /* position: absolute; */
+  /* bottom: 63%;
+    left: 8.2%; */
+  width: 26rem;
+  height: 36rem;
+  content: url("https://pbs.twimg.com/profile_images/1606809535/image_400x400.jpg");
+  z-index: 10;
+  filter: grayscale(100%);
+  border-radius: 2rem;
+  animation-name: opac;
+  animation-duration: 2s;
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+    /* transform: translate3d(0, 100%, 0); */
+  }
+
+  to {
+    opacity: 1;
+    /* transform: translate3d(0, 0, 0); */
+  }
+}
